@@ -1,0 +1,19 @@
+<div class="container">
+  <input type="text" class="form-control my-3"
+  placeholder="search"
+   [(ngModel)]="findText"
+   (input)="shFilter()">
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3">
+      <div class="col" *ngFor="let post of posts">
+          <div class="card">
+              <img src="assets/images/010101.jpg" class="card-img-top" alt="">
+              <div class="card-body">
+                  <h5>{{post.title}}</h5>
+                  <p>
+                    {{post.body}}
+                  </p>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>

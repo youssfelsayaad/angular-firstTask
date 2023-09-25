@@ -1,0 +1,25 @@
+
+<form class="row">
+    <div class="col-12 col-md-6">
+        <input type="email" class="form-control">
+    </div>
+    <div class="col-12 col-md-6 d-flex">
+        <!-- <input [type]="inputType" class="form-control" (input)="handleInput($event)"> -->
+        <!-- <input [type]="inputType" class="form-control" (keyup.enter)="handleInput($event)"> -->
+    
+        <input  #emailInput [type]="inputType"
+         class="form-control"
+          (keyup.control.enter)="handleInput(emailInput)">
+        <button class="btn btn-primary" type="button" (click)="handleInputType()">Show</button>
+    </div>
+    <div class="col-12">
+        <input type="text" [(ngModel)]="userNameInputValue" name="useName" class="form-control">
+    </div>
+    <div class="col-12">
+        <button class="btn btn-success">Login</button>
+    </div>
+    {{inputValue}}
+    {{userNameInputValue}}
+
+
+</form>

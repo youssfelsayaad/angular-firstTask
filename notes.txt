@@ -1,0 +1,19 @@
+-- npm install -g @angular/cli ==> install angular cli
+-- ng new app-name ==> create app
+-- ng g c folder/component-name ==> create component
+-- ng generate component folder/component-name ==> create component
+-- ng serve -o
+-- ng serve -open
+
+
+-- index page ==>   navbar (component) ==> shared
+                    slider (component) ==> components
+                    blogs (component) ==> components
+                    footer (component) ==> shared
+
+-- Data Binding  ==> one way binding  ==> interpolation {{}}   
+                                          property binding  ==> [property]   
+                                          event Binding ==> (event)   
+                 ==> two way binding ==> [] + () ==> [()]
+
+-- Template Reference                                                
